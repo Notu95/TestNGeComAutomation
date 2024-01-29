@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_1" parallel="tests">
+<listeners>
+<listener class-name="Amazon.AmazonWebUITestProject.TestComponent.Listeners"/>
+</listeners>
+  
+  <test  name="ErrorValidationTest_">
+    <classes>
+      <class name="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+    </classes>
+  </test> <!-- Test_1 -->
+</suite> <!-- Suite_1 -->
+  

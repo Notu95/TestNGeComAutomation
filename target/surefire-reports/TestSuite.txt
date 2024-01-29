@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 18.695 s <<< FAILURE! - in TestSuite
+validateCartItemsTest(Amazon.AmazonWebUITestProject.test.LoginToOrderTest)  Time elapsed: 5.304 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+	at Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateCartItemsTest(LoginToOrderTest.java:66)
+
+main(Amazon.AmazonWebUITestProject.test.StandAloneTest)  Time elapsed: 1.031 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.85 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'SOURAVPC', ip: '192.168.0.201'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at Amazon.AmazonWebUITestProject.test.StandAloneTest.main(StandAloneTest.java:57)
+
+main(Amazon.AmazonWebUITestProject.test.StandAloneTest)  Time elapsed: 0.83 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.85 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'SOURAVPC', ip: '192.168.0.201'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at Amazon.AmazonWebUITestProject.test.StandAloneTest.main(StandAloneTest.java:57)
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="LoginToOrderTest(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Amazon.AmazonWebUITestProject.test.LoginToOrderTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="validateOrders"/>
+          <include name="validateCartItemsTest"/>
+          <include name="validatePlaceOrderTest"/>
+        </methods>
+      </class> <!-- Amazon.AmazonWebUITestProject.test.LoginToOrderTest -->
+    </classes>
+  </test> <!-- LoginToOrderTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->

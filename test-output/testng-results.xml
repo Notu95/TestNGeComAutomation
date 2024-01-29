@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-30T02:47:36 IST" name="Sanity" finished-at="2024-01-30T02:47:49 IST" duration-ms="12022">
+    <groups>
+      <group name="dataProviderEG">
+        <method signature="LoginToOrderTest.validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" name="validateCartItemsTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+      </group> <!-- dataProviderEG -->
+      <group name="regression">
+        <method signature="LoginToOrderTest.validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" name="validateCartItemsTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="LoginToOrderTest.validatePlaceOrderTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" name="validatePlaceOrderTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="ErrorValidationTest.wrongPasswordTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" name="wrongPasswordTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.wrongUserIdTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" name="wrongUserIdTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="LoginToOrderTest.validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" name="validateCartItemsTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="LoginToOrderTest.validatePlaceOrderTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" name="validatePlaceOrderTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="ErrorValidationTest.wrongPasswordTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" name="wrongPasswordTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.wrongUserIdTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" name="wrongUserIdTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-01-30T02:47:36 IST" name="ErrorValidationTest_" finished-at="2024-01-30T02:47:45 IST" duration-ms="8419">
+      <class name="Amazon.AmazonWebUITestProject.test.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" started-at="2024-01-30T02:47:37 IST" name="launchApp" finished-at="2024-01-30T02:47:41 IST" duration-ms="4353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="wrongPasswordTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" started-at="2024-01-30T02:47:41 IST" name="wrongPasswordTest" finished-at="2024-01-30T02:47:42 IST" duration-ms="1526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPasswordTest -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" started-at="2024-01-30T02:47:42 IST" name="launchApp" finished-at="2024-01-30T02:47:44 IST" duration-ms="1444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="wrongUserIdTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" started-at="2024-01-30T02:47:44 IST" name="wrongUserIdTest" finished-at="2024-01-30T02:47:45 IST" duration-ms="1034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongUserIdTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@7283d3eb]" started-at="2024-01-30T02:47:45 IST" name="closeApp" finished-at="2024-01-30T02:47:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Amazon.AmazonWebUITestProject.test.ErrorValidationTest -->
+    </test> <!-- ErrorValidationTest_ -->
+    <test started-at="2024-01-30T02:47:36 IST" name="LoginToOrderTest" finished-at="2024-01-30T02:47:49 IST" duration-ms="12022">
+      <class name="Amazon.AmazonWebUITestProject.test.LoginToOrderTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" started-at="2024-01-30T02:47:37 IST" name="launchApp" finished-at="2024-01-30T02:47:39 IST" duration-ms="2862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" started-at="2024-01-30T02:47:39 IST" name="validateCartItemsTest" data-provider="getData" finished-at="2024-01-30T02:47:45 IST" duration-ms="5411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwer@123, email=randomsourav123@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCartItemsTest -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" started-at="2024-01-30T02:47:45 IST" name="launchApp" finished-at="2024-01-30T02:47:46 IST" duration-ms="1592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="validatePlaceOrderTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" started-at="2024-01-30T02:47:46 IST" name="validatePlaceOrderTest" finished-at="2024-01-30T02:47:49 IST" depends-on-methods="Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateCartItemsTest" duration-ms="2102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlaceOrderTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@29f7cefd]" started-at="2024-01-30T02:47:49 IST" name="closeApp" finished-at="2024-01-30T02:47:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Amazon.AmazonWebUITestProject.test.LoginToOrderTest -->
+    </test> <!-- LoginToOrderTest -->
+  </suite> <!-- Sanity -->
+</testng-results>

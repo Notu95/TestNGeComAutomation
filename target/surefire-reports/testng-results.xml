@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="2" failed="3" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-30T01:54:07 IST" name="Surefire suite" finished-at="2024-01-30T01:54:25 IST" duration-ms="18132">
+    <groups>
+      <group name="dataProviderEG2">
+        <method signature="StandAloneTest.main(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.StandAloneTest@124c278f]" name="main" class="Amazon.AmazonWebUITestProject.test.StandAloneTest"/>
+      </group> <!-- dataProviderEG2 -->
+      <group name="dataProviderEG">
+        <method signature="LoginToOrderTest.validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" name="validateCartItemsTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+      </group> <!-- dataProviderEG -->
+      <group name="regression">
+        <method signature="LoginToOrderTest.validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" name="validateCartItemsTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="LoginToOrderTest.validatePlaceOrderTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" name="validatePlaceOrderTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="LoginToOrderTest.validateOrders()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" name="validateOrders" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="ErrorValidationTest.wrongPasswordTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" name="wrongPasswordTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.wrongUserIdTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" name="wrongUserIdTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="LoginToOrderTest.validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" name="validateCartItemsTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="LoginToOrderTest.validatePlaceOrderTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" name="validatePlaceOrderTest" class="Amazon.AmazonWebUITestProject.test.LoginToOrderTest"/>
+        <method signature="ErrorValidationTest.wrongPasswordTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" name="wrongPasswordTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.wrongUserIdTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" name="wrongUserIdTest" class="Amazon.AmazonWebUITestProject.test.ErrorValidationTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-01-30T01:54:07 IST" name="Surefire test" finished-at="2024-01-30T01:54:25 IST" duration-ms="18132">
+      <class name="Amazon.AmazonWebUITestProject.test.StandAloneTest">
+        <test-method is-config="true" signature="config()[pri:0, instance:Amazon.AmazonWebUITestProject.test.StandAloneTest@124c278f]" started-at="2024-01-30T01:54:07 IST" name="config" finished-at="2024-01-30T01:54:07 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method signature="main(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.StandAloneTest@124c278f]" started-at="2024-01-30T01:54:23 IST" name="main" data-provider="getData" finished-at="2024-01-30T01:54:24 IST" duration-ms="1031" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwer@123, email=randomsourav123@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.85 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'SOURAVPC', ip: '192.168.0.201'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.85 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'SOURAVPC', ip: '192.168.0.201'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at Amazon.AmazonWebUITestProject.test.StandAloneTest.main(StandAloneTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method signature="main(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.StandAloneTest@124c278f]" started-at="2024-01-30T01:54:24 IST" name="main" data-provider="getData" finished-at="2024-01-30T01:54:25 IST" duration-ms="829" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwer@1234, email=randommona1234@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.85 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'SOURAVPC', ip: '192.168.0.201'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.85 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'SOURAVPC', ip: '192.168.0.201'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at Amazon.AmazonWebUITestProject.test.StandAloneTest.main(StandAloneTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+      </class> <!-- Amazon.AmazonWebUITestProject.test.StandAloneTest -->
+      <class name="Amazon.AmazonWebUITestProject.test.LoginToOrderTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" started-at="2024-01-30T01:54:16 IST" name="launchApp" finished-at="2024-01-30T01:54:18 IST" duration-ms="1469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="validateCartItemsTest(java.util.HashMap)[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" started-at="2024-01-30T01:54:18 IST" name="validateCartItemsTest" data-provider="getData" finished-at="2024-01-30T01:54:23 IST" duration-ms="5297" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwer@123, email=randomsourav123@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at Amazon.AmazonWebUITestProject.pageobjects.ProductCatalogue.addToCart(ProductCatalogue.java:44)
+at Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateCartItemsTest(LoginToOrderTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCartItemsTest -->
+        <test-method signature="validatePlaceOrderTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" started-at="2024-01-30T01:54:23 IST" name="validatePlaceOrderTest" finished-at="2024-01-30T01:54:23 IST" depends-on-methods="Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateCartItemsTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validatePlaceOrderTest() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6 depends on not successfully finished methods 
+[Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateCartItemsTest() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validatePlaceOrderTest() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6 depends on not successfully finished methods 
+[Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateCartItemsTest() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePlaceOrderTest -->
+        <test-method signature="validateOrders()[pri:0, instance:Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]" started-at="2024-01-30T01:54:23 IST" name="validateOrders" finished-at="2024-01-30T01:54:23 IST" depends-on-methods="Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validatePlaceOrderTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateOrders() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6 depends on not successfully finished methods 
+[Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validatePlaceOrderTest() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validateOrders() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6 depends on not successfully finished methods 
+[Amazon.AmazonWebUITestProject.test.LoginToOrderTest.validatePlaceOrderTest() on instance Amazon.AmazonWebUITestProject.test.LoginToOrderTest@3b07a0d6]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrders -->
+      </class> <!-- Amazon.AmazonWebUITestProject.test.LoginToOrderTest -->
+      <class name="Amazon.AmazonWebUITestProject.test.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" started-at="2024-01-30T01:54:07 IST" name="launchApp" finished-at="2024-01-30T01:54:10 IST" duration-ms="2536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="wrongPasswordTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" started-at="2024-01-30T01:54:10 IST" name="wrongPasswordTest" finished-at="2024-01-30T01:54:11 IST" duration-ms="989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPasswordTest -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" started-at="2024-01-30T01:54:11 IST" name="launchApp" finished-at="2024-01-30T01:54:15 IST" duration-ms="3934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="wrongUserIdTest()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" started-at="2024-01-30T01:54:15 IST" name="wrongUserIdTest" finished-at="2024-01-30T01:54:16 IST" duration-ms="1516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongUserIdTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Amazon.AmazonWebUITestProject.test.ErrorValidationTest@223f3642]" started-at="2024-01-30T01:54:25 IST" name="closeApp" finished-at="2024-01-30T01:54:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Amazon.AmazonWebUITestProject.test.ErrorValidationTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
